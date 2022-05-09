@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  insider_car_image: MyString
+  front_car_image: MyString
+  profile_car_image: MyString
+  marque: MyString
+  modele: MyString
+  color: MyString
+  distance: 
+  description: MyText
+
+two:
+  insider_car_image: MyString
+  front_car_image: MyString
+  profile_car_image: MyString
+  marque: MyString
+  modele: MyString
+  color: MyString
+  distance: 
+  description: MyText

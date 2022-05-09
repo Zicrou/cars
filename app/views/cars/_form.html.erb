@@ -1,0 +1,62 @@
+<%= form_with(model: car) do |form| %>
+  <% if car.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
+
+      <ul>
+        <% car.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :insider_car_image, style: "display: block" %>
+    <%= form.text_field :insider_car_image %>
+  </div>
+
+  <div>
+    <%= form.label :front_car_image, style: "display: block" %>
+    <%= form.text_field :front_car_image %>
+  </div>
+
+  <div>
+    <%= form.label :profile_car_image, style: "display: block" %>
+    <%= form.text_field :profile_car_image %>
+  </div>
+
+  <div>
+    <%= form.label :marque, style: "display: block" %>
+    <%= form.text_field :marque %>
+  </div>
+
+  <div>
+    <%= form.label :modele, style: "display: block" %>
+    <%= form.text_field :modele %>
+  </div>
+
+  <div>
+    <%= form.label :color, style: "display: block" %>
+    <%= form.text_field :color %>
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.text_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :distance, style: "display: block" %>
+    <%= form.text_field :distance %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
